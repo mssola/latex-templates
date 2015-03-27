@@ -1,0 +1,85 @@
+
+\documentclass[10pt]{letter}
+
+\usepackage{tabularx, supertabular}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  top    = 2.50cm,
+  bottom = 2.50cm,
+  left   = 3.00cm,
+  right  = 3.00cm
+]{geometry}
+
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page
+
+% We can customize the default date, but I find that it breaks my design that
+% way. What we're going to do is to remove the default date and add it later
+% on with the tabularx environment.
+\date{}
+
+\begin{document}
+\pagestyle{empty}
+
+\signature{Miquel}
+\begin{letter}{}
+
+% On top of the horizontal line we have the title and the name.
+\begin{tabularx}{\textwidth}{ X r }
+  {\large\bf Cover Letter} & {\normalsize\bf Miquel Sabaté Solà}
+\end{tabularx}
+
+\medskip\hrule height 1pt
+
+% Below the line we have the date floating to the right side.
+\begin{tabularx}{\textwidth}{ X r }
+   & {\normalsize \today}
+\end{tabularx}
+
+\opening{Dear sir or madam,}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus magna
+at justo fermentum faucibus. Suspendisse potenti. Donec tincidunt ut lorem nec
+ultricies. Cras ipsum massa, aliquam quis lacus sed, vulputate aliquam lacus.
+Nulla nec felis eu magna egestas scelerisque. Donec id lorem nunc. Donec
+scelerisque nisi a justo fringilla, in fringilla purus vestibulum. Phasellus
+feugiat cursus massa, et tempor justo dignissim nec.
+
+Suspendisse cursus est in urna facilisis, et fringilla dui dictum. Fusce
+malesuada a orci eget rutrum. Pellentesque nec neque a ex efficitur fringilla.
+Phasellus vitae ligula sed odio bibendum condimentum. Fusce eu massa libero.
+Phasellus at consequat sem. Donec non arcu porta, cursus nibh vel, imperdiet
+metus.
+
+Aenean nec dui tristique, mollis lacus a, dictum augue. Ut molestie gravida
+rhoncus. Proin nec fringilla augue. Vivamus consectetur id ante sit amet
+volutpat. Vivamus magna tortor, sollicitudin nec urna a, tristique suscipit
+enim. Vivamus aliquet dictum quam, sed ullamcorper augue venenatis vitae.
+Aliquam non eros et metus porttitor suscipit.
+
+Etiam congue lorem sed ligula viverra volutpat. Duis sit amet dui tellus. Ut
+nibh quam, dapibus sit amet feugiat eu, faucibus at quam. Phasellus diam dolor,
+ultrices feugiat congue nec, efficitur sed nisl. Praesent auctor eleifend
+eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+per inceptos himenaeos. Morbi sed sapien tempus, fermentum purus et, tincidunt
+nibh. Morbi augue lacus, lacinia ut pretium eu, pharetra non massa. Proin
+euismod ornare vehicula. Ut et neque vitae nisi euismod ornare. Phasellus leo
+ante, porttitor nec maximus et, luctus convallis mauris.
+
+Sed viverra turpis sed quam imperdiet, a aliquam est tincidunt. Aenean magna
+lorem, varius in odio vel, venenatis congue augue. Pellentesque vel mi erat.
+Donec ut orci maximus, auctor diam et, cursus neque. Vivamus faucibus blandit
+placerat. Nulla at quam luctus, egestas ipsum placerat, fermentum orci. In
+efficitur hendrerit urna, quis blandit turpis gravida a. Maecenas ut gravida
+mauris, vel feugiat sem. Nullam efficitur dui leo, et convallis tortor tempor
+non. Cras semper tellus eu ligula varius tincidunt. Pellentesque venenatis,
+ante in egestas commodo, augue urna bibendum turpis, semper placerat felis
+metus non elit. Maecenas sagittis, enim sit amet egestas interdum, ligula dolor
+ultrices dolor, eget dictum ligula nulla vel sapien. Maecenas ut mollis nunc.
+Donec fermentum orci ante, et dictum nisl luctus id. Donec quis nulla ligula.
+
+\closing{Sincerely yours,}
+\end{letter}
+
+\end{document}
+

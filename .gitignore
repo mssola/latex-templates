@@ -1,0 +1,9 @@
+**/*.toc
+**/*.aux
+**/*.log
+**/*.nav
+**/*.out
+**/*.pdf
+**/*.snm
+**/*.gz
+**/*.backup

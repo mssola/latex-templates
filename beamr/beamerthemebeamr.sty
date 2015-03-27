@@ -1,0 +1,72 @@
+% Copyright (C) 2014-2015 Miquel Sabaté Solà <mikisabate@gmail.com>
+%
+% This file is based on the Oxygen theme. This theme can be downloaded
+% in the following URL: http://www.kde.org/kdeslides/
+%
+% This file is licensed under the MIT license.
+% See the LICENSE file.
+
+\usetheme{Rochester}
+
+\RequirePackage{pgf}
+
+\pgfdeclareimage[width=1.0\paperwidth]{beamr-header}{beamr-header}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamercovered{transparent}
+
+\beamer@headheight=0.13\paperwidth
+
+\definecolor{beamrorange}{HTML}{F7800A}
+\definecolor{beamrgray}{HTML}{686868}
+\definecolor{beamrlightgray}{HTML}{EEEEEE}
+\definecolor{beamrblue}{HTML}{236EAF}
+\setbeamercolor*{Title bar}{fg=white}
+\setbeamercolor*{Location bar}{fg=beamrorange,bg=beamrlightgray}
+\setbeamercolor*{frametitle}{parent=Title bar}
+\setbeamercolor*{block title}{bg=beamrblue,fg=white}
+\setbeamercolor*{block body}{bg=beamrlightgray,fg=beamrgray}
+\setbeamercolor*{normal text}{bg=white,fg=beamrgray}
+\setbeamercolor*{section in head/foot}{bg=beamrblue,fg=white}
+\beamertemplatenavigationsymbolsempty
+
+\usecolortheme[named=beamrorange]{structure}
+
+\setbeamertemplate{frametitle}
+{
+  \vskip-0.25\beamer@headheight
+  \vskip-\baselineskip
+  \vskip-0.2cm
+  \hskip0.7cm\usebeamerfont*{frametitle}\insertframetitle
+  \vskip-0.10em
+  \hskip0.7cm\usebeamerfont*{framesubtitle}\insertframesubtitle
+}
+
+\setbeamertemplate{headline}
+{
+  \pgfuseimage{beamr-header}
+  \vskip -1.95cm
+  \linethickness{0.0pt}
+
+  \framelatex{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.3\beamer@headheight]{Title bar}
+    \usebeamerfont{section in head/foot}%
+    \insertsectionnavigationhorizontal{0pt}{\hskip0.22cm}{}%
+  \end{beamercolorbox}}
+
+  \framelatex{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.7\beamer@headheight]{Title bar}
+  \end{beamercolorbox}}
+}
+
+\setbeamertemplate{footline}
+{
+  \linethickness{0.25pt}
+  \framelatex{
+  \begin{beamercolorbox}[leftskip=.3cm,wd=\paperwidth,ht=0.3\beamer@headheight,sep=0.1cm]{Location bar}
+    \usebeamerfont{section in head/foot}%
+    \insertshortauthor
+    \hfill
+    \insertframenumber/\inserttotalframenumber
+  \end{beamercolorbox}}
+}
